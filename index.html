@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="opacity_b">
+                <img src="odin-lined.png" alt="" id="odin">
+                <h1 class="name_odin">ODIN</h1>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="top">
+                <h3>This is not a real service! You know </h2>
+                <h3>Let`s do this</h2>
+            </div>
+            <form action="" id="log_form">
+                <div class="container2">
+                    <div class="main-item">
+                        <div class="item">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name" required>
+                            <div id="first_name_error">Type your first name</div>
+                        </div>
+                        
+                        <div class="item">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name" required>
+                            <div id="last_name_error">Type your last name</div>
+                        </div>
+                    </div>
+                    
+                    <div class="main-item">
+                        <div class="item">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                            <div id="email_error">Type your email</div>
+                        </div>
+                        <div class="item">
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input id ="phone_number" type="tel" name="phone_number" pattern="\d{10,10}" required>
+                            <div id="phone_number_error">Wrong type of number</div>
+                        </div>
+                    </div>
+    
+                    <div class="main-item">
+                        <div class="item">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" pattern="^[\w~'`!@#№?$%^&*()=+.,:;\[\]{} \x22-]{6,25}$" required>
+                            <div id="correct_password">Insecure password</div>
+                        </div>
+                        <div class="item">
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm_password" id="confirm_password" required>
+                            <div id="password_error">Passwords not the same</div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+
+            <div class="bottom">
+                <button type="submit" form="log_form">Create Account</button>
+                <p>Aleready have an account? <a href="">Log in</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
